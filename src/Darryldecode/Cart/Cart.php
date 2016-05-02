@@ -578,7 +578,7 @@ class Cart {
 
         $count = $items->sum(function($item)
         {
-            return $item['quantity'];
+            return $item->quantity;
         });
 
         return $count;
